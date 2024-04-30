@@ -1,21 +1,5 @@
-# This defines the content types for your blog posts
 content:
-  # Name for this content type (appears in admin interface)
-  posts:
-    # This specifies the file extension for blog posts (e.g., .md for markdown)
-    extension: md
-    # This defines the fields for your blog posts
-    fields:
-      # Title field for your blog post
-      title:
-        # Set to true to make the title field mandatory
-        required: true
-      # Body field for the content of your blog post
-      body:
-        # Set to true to allow rich text editing for the body
-        type: rich-text
-
-# This sets the homepage of your website
-site:
-  # Set the name of the blog post file to be used for the homepage (e.g., index.md)
-  homepage: index
+  - name: posts
+    label: Posts
+    path: src/_posts
+    type: collection
